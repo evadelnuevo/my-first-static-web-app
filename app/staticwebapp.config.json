@@ -1,4 +1,24 @@
 {
+    "routes": [
+    {
+      "route": "/images/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=15770000"
+      }
+    },
+    {
+      "route": "/user",
+      "rewrite": "/.auth/me"
+    },
+    {
+      "route": "/login",
+      "rewrite": "/.auth/login/identityServer"
+    },
+    {
+      "route": "/logout",
+      "redirect": "/.auth/logout"
+    }
+  ],
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
@@ -9,7 +29,7 @@
               "clientSecretSettingName": "secret"
             },
             "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://localhost:5000/.well-known/openid-configuration"
+              "wellKnownOpenIdConfiguration": "https://red-identity.niposoftware-dev.com/.well-known/openid-configuration"
             }
           },
           "login": {

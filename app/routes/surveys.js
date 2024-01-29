@@ -1,4 +1,5 @@
 import Route from '@ember/routing/route';
+import fetch, { Headers, Request } from 'fetch';
 
 export default class extends Route {
   async model() {
