@@ -24,9 +24,9 @@
       "customOpenIdConnectProviders": {
         "identityServer": {
           "registration": {
-            "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
+            "clientIdSettingName": "IDENTITY_SERVER_CLIENT_ID",
             "clientCredential": {
-              "clientSecretSettingName": "MY_PROVIDER_CLIENT_SECRET"
+              "clientSecretSettingName": "IDENTITY_SERVER_CLIENT_SECRET"
             },
             "openIdConnectConfiguration": {
               "wellKnownOpenIdConfiguration": "https://red-identity.niposoftware-dev.com/.well-known/openid-configuration"
