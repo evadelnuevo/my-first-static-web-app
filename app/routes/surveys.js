@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 
 export default class extends Route {
   async model() {
-    var req = new Request('/api/surveys', {
+    var req = new Request('https://localhost:41086/api/surveys', {
       headers: new Headers({
         'X-CSRF': '1',
       }),

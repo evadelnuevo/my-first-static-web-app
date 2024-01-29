@@ -1,14 +1,16 @@
 {{#if @model}}
-<h1>Welcome {{@model.name}}!</h1>
-<LinkTo @route="surveys">Go to surveys</LinkTo>
+  <h1>Welcome {{@model.name}}!</h1>
+  <LinkTo @route='surveys'>Go to surveys</LinkTo>
 
   <h2>Sign Out</h2>
 
-  <a href="{{@model.logoutUrl}}">Sign out</a>
+  <form action='/.auth/logout'>
+    <input type='submit' value='Sign out' />
+  </form>
 {{else}}
-<h1>Sign In</h1>
+  <h1>Sign In</h1>
 
-<form action="/bff/login">
-  <input type="submit" value="Sign in" />
-</form>
+  <form action='/.auth/login/identityServer'>
+    <input type='submit' value='Sign in' />
+  </form>
 {{/if}}
