@@ -22,7 +22,7 @@
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
-        "identityServer": {
+        "myProvider": {
           "registration": {
             "clientIdSettingName": "bff",
             "clientCredential": {
