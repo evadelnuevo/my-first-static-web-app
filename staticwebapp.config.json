@@ -22,7 +22,7 @@
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
-        "myProvider": {
+        "identityServer": {
           "registration": {
             "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
             "clientCredential": {
