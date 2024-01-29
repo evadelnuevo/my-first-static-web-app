@@ -1,0 +1,24 @@
+{
+  "auth": {
+    "identityProviders": {
+      "customOpenIdConnectProviders": {
+        "identityServer": {
+          "registration": {
+            "clientIdSettingName": "bff",
+            "clientCredential": {
+              "clientSecretSettingName": "secret"
+            },
+            "openIdConnectConfiguration": {
+              "wellKnownOpenIdConfiguration": "https://localhost:5000/.well-known/openid-configuration"
+            }
+          },
+          "login": {
+            "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+            "scopes": ["openid", "profile", "email", "roles", "nfieldDomain", "resourceRoles", "clientOrigin"],
+            "loginParameterNames": []
+          }
+        }
+      }
+    }
+  }
+}

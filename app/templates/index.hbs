@@ -1,0 +1,14 @@
+{{#if @model}}
+<h1>Welcome {{@model.name}}!</h1>
+<LinkTo @route="surveys">Go to surveys</LinkTo>
+
+  <h2>Sign Out</h2>
+
+  <a href="{{@model.logoutUrl}}">Sign out</a>
+{{else}}
+<h1>Sign In</h1>
+
+<form action="/bff/login">
+  <input type="submit" value="Sign in" />
+</form>
+{{/if}}
