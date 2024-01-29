@@ -22,11 +22,11 @@
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
-        "identityServer": {
+        "myProvider": {
           "registration": {
-            "clientIdSettingName": "bff",
+            "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
             "clientCredential": {
-              "clientSecretSettingName": "secret"
+              "clientSecretSettingName": "MY_PROVIDER_CLIENT_SECRET"
             },
             "openIdConnectConfiguration": {
               "wellKnownOpenIdConfiguration": "https://red-identity.niposoftware-dev.com/.well-known/openid-configuration"
